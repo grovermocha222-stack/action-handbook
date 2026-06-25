@@ -1,0 +1,6 @@
+{
+  "name": "Heavy Equipment PM Handbook",
+  "description": "An actionable, offline-first preventive maintenance handbook and interactive inspection tool for heavy machinery in Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
