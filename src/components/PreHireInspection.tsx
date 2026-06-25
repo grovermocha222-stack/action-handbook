@@ -17,7 +17,6 @@ export default function PreHireInspection({ onSave }: PreHireInspectionProps) {
     model: "",
     owner: "",
     site: "",
-    hours: "",
     
     // Checks (true = PASS/YES, false = FAIL/NO)
     engineStartsWell: true,
@@ -116,7 +115,6 @@ export default function PreHireInspection({ onSave }: PreHireInspectionProps) {
       model: "",
       owner: "",
       site: "",
-      hours: "",
       engineStartsWell: true,
       smokeNormal: true,
       noEngineKnocking: true,
@@ -166,7 +164,7 @@ export default function PreHireInspection({ onSave }: PreHireInspectionProps) {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Machine Metadata */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div>
             <label className="block text-xs font-black text-black uppercase mb-1">Machine Class</label>
             <select
@@ -215,18 +213,6 @@ export default function PreHireInspection({ onSave }: PreHireInspectionProps) {
               name="site"
               placeholder="e.g. Lekki Tollgate"
               value={formData.site}
-              onChange={handleInputChange}
-              className="w-full border-2 border-black px-3 py-2 text-sm font-bold focus:outline-none focus:bg-[#CCFF00]/10 placeholder:text-zinc-400"
-            />
-          </div>
-
-          <div>
-            <label className="block text-xs font-black text-black uppercase mb-1">Hour Meter (HMR)</label>
-            <input
-              type="text"
-              name="hours"
-              placeholder="e.g. 4,520 Hours"
-              value={formData.hours}
               onChange={handleInputChange}
               className="w-full border-2 border-black px-3 py-2 text-sm font-bold focus:outline-none focus:bg-[#CCFF00]/10 placeholder:text-zinc-400"
             />

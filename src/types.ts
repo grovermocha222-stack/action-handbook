@@ -52,7 +52,7 @@ export interface InspectionForm {
   model: string;
   owner: string;
   site: string;
-  hours: string;
+  hours?: string;
   
   // Section checklist responses: 'yes' (pass), 'no' (fail/issue)
   engineStartsWell: boolean;

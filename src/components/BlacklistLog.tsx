@@ -84,7 +84,6 @@ export default function BlacklistLog({
 🚜 *Machine:* CAT ${report.machineType.toUpperCase()} (${report.model})
 👤 *Owner:* ${report.owner}
 📍 *Site:* ${report.site || "N/A"}
-⏱️ *HMR:* ${report.hours || "N/A"}
 
 *FINAL DECISION:* ${decEmoji} *${decText}*
 
@@ -190,14 +189,10 @@ _Report compiled using Nigeria PM Handbook - Reliable deliveries only_ 🚜🔍`
                     {/* Expandable details */}
                     {isExpanded && (
                       <div className="p-4 bg-white border-t border-zinc-200 space-y-4">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 border-b border-black pb-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-b border-black pb-4">
                           <div>
                             <span className="font-mono text-[10px] uppercase font-black text-zinc-400">Owner & Location</span>
                             <p className="text-sm text-black font-bold mt-0.5">{report.owner} &bull; {report.site || "N/A"}</p>
-                          </div>
-                          <div>
-                            <span className="font-mono text-[10px] uppercase font-black text-zinc-400">Hour Meter Reading</span>
-                            <p className="text-sm text-black font-bold mt-0.5">{report.hours || "N/A"}</p>
                           </div>
                         </div>
 
